@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -29,12 +29,20 @@ function Header() {
     }));
 
     const [mostra, setMostra] = useState(false);
+   
 
     const abritMenu = () => {
         setMostra(!mostra)
+        
     }
 
     const classes = useStyles();
+
+   
+
+    function funcaoParaFechar (ReceberFechar) {
+        setMostra(true)
+    }
 
     return (
         <div className={classes.root}>
@@ -52,7 +60,7 @@ function Header() {
                 </Toolbar>
             </AppBar>
             {mostra &&
-                <Menu />
+                <Menu acionaFechar={funcaoParaFechar} />
             }
         </div>
     );

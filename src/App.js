@@ -47,10 +47,10 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <Header />
-        <Switch>
+        <Switch >
 
             <Route exact={true} path='/'>
-              <Home/>
+              <Home />
             </Route>
 
             <Route path='/Props'>

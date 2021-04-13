@@ -22,20 +22,8 @@ function Home() {
             <Espaco />
             <Grid container alignItems='center'   >
 
-                <Grid container sm={6} item justify='center'>
-                    <Grid container sm={10}>
-                        <Paper style={{padding:'30px'}}>
-                            <Typography variant='body2'>
-                                Meu Nome é Matheus e desenvolvi esse compilado conforme fui
-                                aprendendo com o curso React Js do Professor Bonieky da B7web,
-                                é tornando um material bem util tanto para iniciantes, quanto para
-                                material de consulta para profissionais espero ter ajudado
-                        </Typography>
-                        </Paper>
-                    </Grid>
-                </Grid>
-
-                <Grid container sm={6} item direction='column' alignContent='center' justify='center' >
+            <Grid container sm={6} item direction='column' alignContent='center' justify='center' >
+                    <Espaco/>
                     <Typography align='center' variant='subtitle1'>
                         Matheus Lira Barbosa
                     </Typography>
@@ -49,6 +37,20 @@ function Home() {
                  <Espaco />
                 </Grid>
 
+                <Grid container sm={6} item justify='center'>
+                    <Grid container sm={10}>
+                        <Paper style={{padding:'30px'}}>
+                            <Typography variant='body2'>
+                                Meu Nome é Matheus e desenvolvi esse compilado conforme fui
+                                aprendendo com o curso React Js do Professor Bonieky da B7web,
+                                e se tornou um material bem util para consultas, 
+                                não esqueça de instalar as depencias antes de rodar o projeto 
+                                dando um yarn no terminal... espero ter ajudado
+                        </Typography>
+                        </Paper>
+                        <Espaco/>
+                    </Grid>
+                </Grid>
             </Grid>
             <Espaco />
             <hr style={{ borderStyle: 'solid' }} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -7,21 +7,28 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
         maxWidth: 360,
         position: 'absolute',
-        backgroundColor: '#FFF',
+        backgroundColor: '#7CEB17',
         zIndex:90,
         transition:'opacity 1s ease-out',
-       
-        
     },
+    link:{
+        listStyle:'none',
+        textDecoration:'none',
+        color:'#161A33'
+    }
 }));
 
-export default function Menu() {
+
+
+export default function Menu(props) {
     const classes = useStyles();
     const [selectedIndex, setSelectedIndex] = React.useState();
 
@@ -30,11 +37,22 @@ export default function Menu() {
         
     };
 
+    const [clicou, setClicou] = useState(false);
+
+    useEffect( ()=>{
+        setClicou(true);
+        props.acionaFechar(clicou);
+        setTimeout( ()=>{
+            setClicou(false)
+        },1000)
+    },[clicou])
+
+    
     return (
        
             <div className={classes.root}>
-                <List component="nav" aria-label="main mailbox folders">
-                    <Link to='/Props'>
+                <List component="nav" aria-label="main mailbox folders" onClick={clicou} >
+                    <Link to='/Props' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 0}
@@ -47,7 +65,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/StyledComponent'>
+                    <Link to='/StyledComponent' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 1}
@@ -60,7 +78,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/UseState'>
+                    <Link to='/UseState' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 2}
@@ -73,7 +91,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/Calculadora'>
+                    <Link to='/Calculadora' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 3}
@@ -86,7 +104,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/UseEffect'>
+                    <Link to='/UseEffect' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 4}
@@ -99,7 +117,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/Comunicacao'>
+                    <Link to='/Comunicacao' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 5}
@@ -112,7 +130,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/Criando-uma-Lista'>
+                    <Link to='/Criando-uma-Lista' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 6}
@@ -125,7 +143,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/LocalStorage'>
+                    <Link to='/LocalStorage' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 7}
@@ -138,7 +156,7 @@ export default function Menu() {
                         </ListItem>
                     </Link>
 
-                    <Link to='/Criando-um-modal'>
+                    <Link to='/Criando-um-modal' className={classes.link}>
                         <ListItem
                             button
                             selected={selectedIndex === 8}
