@@ -2,21 +2,24 @@ import React, { useEffect, useState } from 'react'
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import { Button } from '@material-ui/core';
 import styled from 'styled-components';
 import Espaco from '../ComponentesMaisUsados/espaco'
 
 const Happened = styled.div`
 display: none;
 background-color:#00BCFA;
-width:300px;
-height: 300px;
+width:100%;
+max-width:200px;
+height: 200px;
 border-radius:50%;
 color:#FFF;
 padding:50px;
 align-items:center;
 text-align:center;
-margin:30px
+margin:30px;
+display:flex;
+justify-content:center
 
 `;
 
@@ -46,14 +49,14 @@ function UseEffect() {
     }, [exemplo1])
 
     return (
-        <Base  style={{backgroundColor:'#0B5AD9', padding:'20px'}}>
+        <Base  >
             <Typography variant='h2' align='center' >  Aula 13</Typography>
             <Typography variant='h6' align='center' > Utilizando o UseEffect </Typography>
             <Espaco/>
             
         <Grid justify='center' container >
             <Grid container md={6} justify='center' item >
-                <Paper style={{textAlign:'center',padding:'30px'}}>
+                <Paper style={{textAlign:'center',padding:'30px',display:'flex',flexDirection:'column', alignItems:'center'}}>
                 
                     <Typography variant='h5' align='center'  style={{margin:'20px'}}>
                         {exemplo1}

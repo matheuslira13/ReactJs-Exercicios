@@ -25,7 +25,7 @@ function Aula12() {
     let resultado = primeiro - calculo;
 
     return (
-        <Grid container direction='column' alignItems='center' style={{backgroundColor:'#7CEB17',padding:'20px'}}>
+        <Grid container direction='column' alignItems='center' style={{backgroundColor:'#00BCFA',padding:'20px'}}>
             
             <Typography variant='h2' align='center' style={{color:'#FFF'}}> Aula 12 </Typography>
             <Espaco/>

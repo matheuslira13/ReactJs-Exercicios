@@ -31,7 +31,7 @@ function UseEffect() {
             <Espaco/>
             <Grid justify='center' container  >
 
-                <Grid container md={6} alignItems='center' item style={{padding:'20px'}} >
+                <Grid container  item md={6} alignItems='center' item style={{padding:'20px'}} >
                     <Typography variant='h6'> Muito importante entender como isso aconteçe</Typography>
                     <Typography variant='body2'> A Comunicação e realizado atraves de props que 
                     são funções e com o auxilio do useState e useEffect essa comnunicação e 
@@ -43,7 +43,7 @@ function UseEffect() {
                     </Typography>
                 </Grid>
 
-                <Grid container md={6} style={{padding:'20px'}}>
+                <Grid container item md={6} style={{padding:'20px'}}>
                     <Espaco/>
                     <ComponenteTeste mudancaAciona={funcaoParaMuda}/>
                     <Typography variant='body1'>

@@ -36,7 +36,7 @@ function Aula9() {
     }
     /*************************************************** */
     let [texto, setTexto] = useState('"Esse é o texto que vai ser mudado"');
-    let [texto2, setTexto2] = useState(' ');
+   
 
     let escrever = function (e) {
         setTexto(e.target.value)
@@ -92,7 +92,7 @@ function Aula9() {
                         </Typography>
                         <Espaco/>
                         <Grid container direction='column' alignItems='center' >
-                        <TextField label='Digite aqui' onChange={escrever} style={{width:'300px', display:'flex',marginBottom:'30px'}} />
+                        <TextField label='Digite aqui' onChange={escrever} style={{width:'100%', display:'flex',marginBottom:'30px'}} />
                             <Typography variant='body1'>  
                                 Texto digitado:  <b>{texto}</b>
                             </Typography>

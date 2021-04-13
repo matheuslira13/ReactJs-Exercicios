@@ -15,7 +15,7 @@ import Espaco from '../ComponentesMaisUsados/espaco';
 const Base = styled.div`
 
 align-items:center;
-background-color: #7CEB17;
+background-color: #00BCFA;
 padding:20px;
 color:#FFF;
 
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     root: {
         minWidth: 160,
         margin:30,
-        backgroundColor:'#00BCFA',
+        backgroundColor:'#0B5AD9',
         color:'#FFF'
     },
     media: {
@@ -65,7 +65,7 @@ function Aula17() {
             <Typography variant='h6' align='center'> Lista de Tarefa</Typography>
             <Espaco/>
             <Grid justify='center' container >
-                <Grid container  md={6} justify='center' item  >
+                <Grid container item  md={6} justify='center'   >
                     <Typography variant='h5' > 
                         Criando um campo de Input e adicionando dentro do card
                     </Typography>

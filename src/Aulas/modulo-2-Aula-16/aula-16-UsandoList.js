@@ -12,7 +12,7 @@ import Espaco  from '../ComponentesMaisUsados/espaco'
 const Base = styled.div`
 display:flex;
 align-items:center;
-background-color: #0B5AD9;
+background-color: #00BCFA;
 padding:20px;
 flex-direction:column;
 color:#FFF;
@@ -55,7 +55,7 @@ function Aula16() {
 
         <Grid justify='center' container  >
        
-            <Grid container md={10} justify='center' item >
+            <Grid container item md={10} justify='center'  >
               
 
                 <Typography variant='body2'>

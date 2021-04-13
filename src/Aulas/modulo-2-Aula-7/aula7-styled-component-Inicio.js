@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
-import { Paper, Typography } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Espaco from '../ComponentesMaisUsados/espaco';
 
 const Base = styled.div`
 display:flex;
 align-items:center;
-background-color: #0B5AD9;
+background-color: #00BCFA;
 padding:20px;
 flex-direction:column;
 color:#FFF;
@@ -75,7 +77,7 @@ function Aula7() {
                         Uso do Styled component
                     </Typography>
                 </Styled2>
-                <Grid container >
+                <Grid container spacing={2} >
                 
                     <Grid container item justify='center' md={6} >
                         <Paper style={{padding:'30px', textAlign:'center'}}>
@@ -86,7 +88,7 @@ function Aula7() {
                             <Styled4 back='#7CFA28' color='#222024'>Botao 2</Styled4>
                             </Paper>
                     </Grid>
-
+                   
                     <Grid container item justify='center' md={6}>
                         <Styled5>
                             <Typography variant='body2'>
