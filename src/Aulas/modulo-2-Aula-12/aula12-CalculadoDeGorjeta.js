@@ -26,7 +26,7 @@ function Aula12() {
 
     return (
         <Grid container direction='column' alignItems='center' style={{backgroundColor:'#00BCFA',padding:'20px'}}>
-            
+            <Espaco/>
             <Typography variant='h2' align='center' style={{color:'#FFF'}}> Aula 12 </Typography>
             <Espaco/>
             <Grid item md={6} container alignItems='center' direction='column'   >
@@ -52,6 +52,8 @@ function Aula12() {
             </Grid>
             <Espaco/>
             <hr style={{border:'1px solid #FFF',width:'100%'}}/>
+            <Espaco/>
+            <Espaco/>
         </Grid>
     );
 }

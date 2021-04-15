@@ -26,6 +26,7 @@ function UseEffect() {
 
     return (
         <Base>
+        <Espaco/>
             <Typography variant='h2' align='center'> Aula 14 </Typography>
             <Typography variant='h6' align='center'> Comunicação entre componentes</Typography>
             <Espaco/>
@@ -54,6 +55,7 @@ function UseEffect() {
                 </Grid>
 
             </Grid>
+            <Espaco/>
         </Base>
     );
 }

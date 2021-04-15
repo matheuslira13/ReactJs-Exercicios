@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Espaco from '../ComponentesMaisUsados/espaco';
+import {useParams} from 'react-router-dom';
 
 const Base = styled.div`
 display:flex;
@@ -64,7 +65,7 @@ const Styled6 = styled(Styled4)`
 `;
 
 function Aula7() {
- 
+    let {cat1} = useParams();
 
     return (
        <Base>
@@ -74,7 +75,7 @@ function Aula7() {
                         Aula 06 07 e 08
                     </Typography>
                     <Typography variant='h6' align='center'>
-                        Uso do Styled component
+                        Uso do {cat1}
                     </Typography>
                 </Styled2>
                 <Grid container spacing={2} >

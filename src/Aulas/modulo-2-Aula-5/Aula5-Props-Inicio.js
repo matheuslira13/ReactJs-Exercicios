@@ -1,4 +1,5 @@
 import React from 'react'
+import {useParams} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -37,13 +38,16 @@ function ExemploDeProps (props) {
       url:"https://i.redd.it/zn1gjvqsk0661.jpg",
       nome:'Kitana'
     }
+
+    let {cat} = useParams();
+
     return (
       <div style={{backgroundColor:'#00BCFA', color:'#FFF', padding:'20px'}} >
         <Typography align='center' variant='h2'  >
            Aula 5 
         </Typography>
         <Typography align='center' variant='h6' >
-        props inicio 
+        {cat} inicio 
         </Typography>
         <Espaco/>
         <Grid container alignItems='center'   >

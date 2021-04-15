@@ -31,18 +31,14 @@ function Aula16() {
             <Typography variant='h2' align='center'> Aula 19 </Typography>
             <Espaco/>
             <Typography variant='h6'> Criando um Modal </Typography>
-            <Espaco />
-            <Espaco />
-            <Espaco />
-            <Espaco />
-            <Espaco />
-            <Espaco />
+          
 
             <Grid justify='center' container  >
 
                 <Grid container item md={10} justify='center'  >
 
-                    <Button variant='contained' color='secondary' onClick={abriModal}> Abri Modal</Button>
+                    <Button variant='contained' color='secondary' onClick={abriModal} style={{marginTop:'300px'}}>
+                         Abri Modal</Button>
           
                     <Modal visibilidade={moadlVisibilidade} fechar={setModalVisibilidade}>
                         <Typography variant='h1'>

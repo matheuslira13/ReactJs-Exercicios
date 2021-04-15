@@ -12,7 +12,8 @@ import Aula14 from './Aulas/modulo-2-Aula-14/aula14-CominicacaoEntreComponentes'
 import Aula16 from './Aulas/modulo-2-Aula-16/aula-16-UsandoList';
 import Aula17 from './Aulas/modulo-2-Aula-17/aula-17-AddItemsNaLista';
 import Aula18 from './Aulas/modulo-2-Aula-18/aula-18-LocalStorage';
-import Aula19 from './Aulas/modulo-2-Aula-19/aula19-CriandoModal'
+import Aula19 from './Aulas/modulo-2-Aula-19/aula19-CriandoModal';
+import NotFound from './Aulas/notFound';
 import { Route, Link, Switch, BrowserRouter, Router } from 'react-router-dom';
 import React from 'react';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
@@ -89,6 +90,11 @@ function App() {
             <Route path='/Criando-um-modal'>
               <Aula19 />
             </Route>
+
+            <Route path='*'>
+              <NotFound/>
+            </Route>
+
 
         </Switch>
         <Footer/>
